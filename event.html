@@ -1,0 +1,345 @@
+<html>
+<head>
+
+<link rel="stylesheet" href="_public/assets/css/main.css" type="text/css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.11.2/css/jquery.dataTables.min.css" />
+</head>
+
+<body>
+  
+    <div class="row" style="margin-right:0">
+          <div class="mad mad2 madnav hide">
+         <div class="close-side"><i class="fa fa-times-circle"></i></div>
+            <div class="sidebar">
+
+                <img src="_public/assets/img/logo.png" style="width:200px;padding:10px"/>
+                <a href="dashboard.html" class="text-white lside">
+                <div class="row lk-side mgt-20 ">
+        
+                <div class="mad mad2" align="right"><span class="text-white lside"><i class="fa fa-home"></i></span></div><div class="mad mad10">
+                    Dashboard
+                
+                
+                
+                </div>
+        
+            
+            </div>
+        </a>
+        <a href="pendaftar.html" class="text-white lside">
+            <div class="row lk-side mgt-10 " >
+        
+                <div class="mad mad2" align="right"><span class="text-white lside"><i class="fa fa-users"></i></span></div><div class="mad mad10">
+                Data Pendaftar
+                
+                
+                
+                </div>
+        
+            
+            </div>
+        
+        </a>
+        
+        <a href="peserta.html" class="text-white lside">
+            <div class="row lk-side mgt-10 " >
+        
+                <div class="mad mad2" align="right"><span class="text-white lside"><i class="fa fa-check"></i></span></div>
+                <div class="mad mad10">Peserta Valid</div>
+        
+            
+            </div>
+        
+        
+        </a>
+        <a href="statistik.html" class="text-white lside">
+            <div class="row lk-side mgt-10 " >
+        
+                <div class="mad mad2" align="right"><span class="text-white lside"><i class="fa fa-chart-pie"></i></span></div><div class="mad mad10">Sajian Statistik</div>
+        
+            
+            </div>
+        </a>
+        <a href="event.html" class="text-white lside">
+            <div class="row lk-side mgt-10 lk-active" >
+        
+                <div class="mad mad2" align="right"><span class="text-white lside"><i class="fa fa-medal"></i></span></div><div class="mad mad10">Data Event</div>
+        
+            
+            </div>
+        </a>
+        <a href="kas.html" class="text-white lside">
+            <div class="row lk-side mgt-10 " >
+        
+                <div class="mad mad2" align="right"><span class="text-white lside"><i class="fa fa-edit"></i></span></div>
+                <div class="mad mad10">Kas Event</div>
+        
+            
+            </div>
+        </a>
+            <a href="user.html" class="text-white lside">
+            <div class="row lk-side mgt-10 " >
+        
+                <div class="mad mad2" align="right"><span class="text-white lside"><i class="fa fa-user"></i></span></div>
+                <div class="mad mad10">User Panitia</div>
+        
+            
+            </div>
+        </a>
+        <a href="laporan.html" class="text-white lside">
+            <div class="row lk-side mgt-10 " >
+        
+                <div class="mad mad2" align="right"><span class="text-white lside"><i class="fa fa-sticky-note"></i></span></div><div class="mad mad10">
+                   Cetak Laporan</div>
+        
+            
+            </div>
+            
+            </div>
+ </div>
+
+ <div class="mad mad10 madside " >
+    <div class="navbar navy navy-admin"><a href="#" id="navb" ><i class="fa fa-bars"></i></a>   <div class="profile profil" data-open=""><i class="fa fa-user-circle"></i> ABDAN HAFIDZ</div>
+        <div class="card user-nav unshow" >
+            <div class="row">
+
+            <div class="mad12 lnavu"><a href="edit-user.html"><i class="fa fa-user"></i> User Profile</a></div>
+             <div class="mad12 lnavu"><a href="event.html"><i class="fa fa-cog"></i> Atur Event</a></div>
+              <div class="mad12 lnavu"><a href="login.html"><i class="fa fa-sign-out-alt"></i> Logout</a></div>
+            </div>
+
+
+
+        </div></div>
+    <div class="kananp">
+
+    <div class="container">
+        
+        <h1 class="mgt-50 tebel-700">Data Event<p>Data Event | Sistem Administrasi Perlombaan</p></h1>
+        <div class="row">
+           
+            <div class="mad mad12">
+                
+             <div class="row">
+            <div class="mad3">
+            <b class="tebel-800">Nama Event</b>
+            <p class="label">Nama event yang sedang diselenggarakan misalnya Pekan Teknologi Indonesia 2021</p>
+            </div>
+            <div class="mad9">
+                <div class="card">   <input type="text" class="inputy" value="Pekan Teknologi Indonesia 2021" /></div>
+             
+            </div>
+
+            <div class="mad3">
+                <b class="tebel-800">Pelaksanaan</b>
+                <p class="label">Silahkan atur tanggal pelaksanaan, pembukaan dan penutupan pendaftaraan</p>
+                </div>
+                <div class="mad9">
+                    <div class="card">   
+                        <div class="row">
+                            <div class="mad6">
+                        <b class="label">Buka Pendaftaran</b>
+                        <input type="datetime-local" class="inputy" />
+                    </div>
+
+                    <div class="mad6">
+                        <b class="label">Tutup</b>
+                        <input type="datetime-local" class="inputy" />
+                    </div>
+<br><br>
+                    <div class="mad12">
+                        <b class="label">Pelaksanaan</b>
+                        <div class="row">
+                            <div class="mad6">
+                        <input type="date" class="inputy" /></div><div class="mad6"><input type="date" class="inputy" /></div> 
+
+                        </div>
+                    </div>
+<div class="mad12"> <br><div class="panelb">Website pendaftaran akan ditutup secara otomatis jika waktu sudah mencapai batas pendaftaran yaitu waktu <b class="tebel-800">Tutup</b></div>
+</div></div>
+                   
+                    </div>
+                 
+                </div>
+
+                
+             </div>
+        <br>
+        <div class="row">
+            <div class="mad3">
+            <b class="tebel-800">Paket Pendaftaran</b>
+            <p class="label">Paket pendaftaran terdiri dari sub-event atau bidang lomba yang anda buat. Setiap bidang lomba bisa memuat harga yang berbeda atau sama</p>
+            </div>
+            <div class="mad9">
+                <div class="card">    <div class="btn-right">
+                      <button class="btn-merah btn-right" tog="modal" target="#pendaftar">+ Tambah Biaya</button>
+
+                      <br>
+                      <table class="tabel-mantap datatb table-responsive" cellpadding="0" celspacing="0">
+                        <thead>
+                            <th>#</th>
+                            <th class="usrt">Bidang <i class="fa fa-sort"></i></th>
+                            <th class="usrt">Biaya Pendaftaran </th>
+                            <th class="usrt">Action </th>
+                        </thead>
+    <tbody>
+       
+        <tr>
+          
+            <td>1</td>
+        <td>Website Design</td>
+        <td>Rp 50.000</td>
+     
+        <td>
+    
+            <button class="button"><i class="fa fa-edit"></i> </button>
+            
+            
+            
+            <button class="button"><i class="fa fa-times"></i></button></td>
+            
+        </tr>
+        <tr>
+            <td>2</td>
+        
+            <td>Desain Poster</td>
+        <td>Rp 50.000</td>
+        <td>   <button class="button"><i class="fa fa-edit"></i> </button>
+            
+            
+            
+            <button class="button"><i class="fa fa-times"></i></button></td>
+            </td>
+        </tr>
+    </tbody>
+    
+                    </table>
+                </div></div>
+             
+            </div>
+</div>
+<br>
+<div class="row">
+            <div class="mad3">
+                <b class="tebel-800">Poster & Logo Lomba</b>
+                <p class="label">Upload poster/flyer dan logo event anda</p>
+                </div>
+                <div class="mad9">
+                    <div class="card">   
+                        <div class="row">
+                     <div class="mad12">
+                         <div class="row">
+                        <div class="card mad4 card-file">
+                            <b class="label">Poster</b>   <br><br>
+                         <h1 align="center"><img style="width:50%" src="https://img.pikbest.com/01/34/09/59GpIkbEsTyx2.jpg-1.jpg!bw700"></h1>
+                            <input type="file" class="inputy" >
+                            <br><br>
+                    
+                      
+                            </div>
+
+                            <div class="card mad4 card-file">
+                                <b class="label">Logo</b>   <br><br>
+                             <h1 align="center"><img src="_public/assets/img/logo.png" style="background-color:black;width:70%"></h1>
+                                <input type="file" class="inputy" >
+                                <br><br>
+                        
+                          
+                                </div>
+                            </div>
+
+                     </div>
+
+</div></div>
+                   
+                    </div>
+                 
+                </div>
+<br>
+  <div class="row">
+            <div class="mad3">
+            <b class="tebel-800">Deskripsi Event</b>
+            <p class="label">Deskripsikan detail lebih lanjut event anda seperti fasilitas dan hadiah yang ada</p>
+            </div>
+            <div class="mad9">
+                <div class="card">   
+                    <textarea class="inputy" style="width:100%">Event keren deh pokoknya</textarea>
+
+                </div></div>
+             
+            </div>
+            <br>
+            <br>
+            <div class="btn-right"><button class="btn-biru btn-right">Simpan Perubahan</button></div>
+</div>
+<br>
+                
+             </div>
+        
+            </div>
+          
+          
+        </div>
+    
+   
+    </div>
+
+</div>
+
+</div>
+</div>
+</div>
+<div class="modal" id="pendaftar">
+    <div class="container">
+    <div class="card card-unround card-modal mad8 mgt-30 " >    
+  
+        <div class="container"> 
+          
+        <h3 class="tebel-800">Tambah Data Paket Pendaftaran <a href="#" class="btn-tutup"><i class="fa fa-times label-tutup"></i></a></h3>
+      
+               
+ 
+   
+        <b class="label">Bidang</b>
+        <input type="text" class="inputy" >
+        <br><br>
+        <b class="label">Biaya Pendaftaran</b>
+        <input type="number" class="inputy" >
+        <br><br>
+
+        <br><br>
+   
+    
+
+        <br>
+        <button class="btn-kuning btn-tutup">Tutup</button> <button class="btn-biru">Simpan</button>
+    
+    </div>
+
+    </div>
+</div>
+
+
+
+<script src="https://kit.fontawesome.com/14717bb359.js" crossorigin="anonymous"></script>
+<script src="_public/assets/plugin/jquery.js" type="text/javascript"></script>
+<script src="_public/js/custom.js" type="text/javascript"></script>
+<script src="//cdn.datatables.net/1.11.2/js/jquery.dataTables.min.js"></script>
+<script>
+    $(document).ready( function () {
+    $('.datatb').DataTable({
+        responsive: true
+    });
+    $('.datatb').removeClass('dataTable');
+} );
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,293 @@
+<html>
+<head>
+
+<link rel="stylesheet" href="_public/assets/css/main.css" type="text/css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.11.2/css/jquery.dataTables.min.css" />
+</head>
+
+<body>
+  
+    <div class="row" style="margin-right:0">
+          <div class="mad mad2 madnav hide">
+         <div class="close-side"><i class="fa fa-times-circle"></i></div>
+            <div class="sidebar">
+
+                <img src="_public/assets/img/logo.png" style="width:200px;padding:10px"/>
+                <a href="dashboard.html" class="text-white lside">
+                <div class="row lk-side mgt-20">
+        
+                <div class="mad mad2" align="right"><span class="text-white lside"><i class="fa fa-home"></i></span></div><div class="mad mad10">
+                    Dashboard
+                
+                
+                
+                </div>
+        
+            
+            </div>
+        </a>
+        <a href="pendaftar.html" class="text-white lside">
+            <div class="row lk-side mgt-10 " >
+        
+                <div class="mad mad2" align="right"><span class="text-white lside"><i class="fa fa-users"></i></span></div><div class="mad mad10">
+                Data Pendaftar
+                
+                
+                
+                </div>
+        
+            
+            </div>
+        
+        </a>
+        
+        <a href="peserta.html" class="text-white lside">
+            <div class="row lk-side mgt-10 lk-active " >
+        
+                <div class="mad mad2" align="right"><span class="text-white lside"><i class="fa fa-check"></i></span></div>
+                <div class="mad mad10">Peserta Valid</div>
+        
+            
+            </div>
+        
+        
+        </a>
+        <a href="statistik.html" class="text-white lside">
+            <div class="row lk-side mgt-10 " >
+        
+                <div class="mad mad2" align="right"><span class="text-white lside"><i class="fa fa-chart-pie"></i></span></div><div class="mad mad10">Sajian Statistik</div>
+        
+            
+            </div>
+        </a>
+        <a href="event.html" class="text-white lside">
+            <div class="row lk-side mgt-10 " >
+        
+                <div class="mad mad2" align="right"><span class="text-white lside"><i class="fa fa-medal"></i></span></div><div class="mad mad10">Data Event</div>
+        
+            
+            </div>
+        </a>
+        <a href="kas.html" class="text-white lside">
+            <div class="row lk-side mgt-10 " >
+        
+                <div class="mad mad2" align="right"><span class="text-white lside"><i class="fa fa-edit"></i></span></div>
+                <div class="mad mad10">Kas Event</div>
+        
+            
+            </div>
+        </a>
+            <a href="user.html" class="text-white lside">
+            <div class="row lk-side mgt-10 " >
+        
+                <div class="mad mad2" align="right"><span class="text-white lside"><i class="fa fa-user"></i></span></div>
+                <div class="mad mad10">User Panitia</div>
+        
+            
+            </div>
+        </a>
+        <a href="laporan.html" class="text-white lside">
+            <div class="row lk-side mgt-10 " >
+        
+                <div class="mad mad2" align="right"><span class="text-white lside"><i class="fa fa-sticky-note"></i></span></div><div class="mad mad10">
+                   Cetak Laporan</div>
+        
+            
+            </div>
+            
+            </div>
+ </div>
+
+ <div class="mad mad10 madside " >
+    <div class="navbar navy navy-admin"><a href="#" id="navb" ><i class="fa fa-bars"></i></a>   <div class="profile profil" data-open=""><i class="fa fa-user-circle"></i> ABDAN HAFIDZ</div>
+        <div class="card user-nav unshow" >
+            <div class="row">
+
+            <div class="mad12 lnavu"><a href="edit-user.html"><i class="fa fa-user"></i> User Profile</a></div>
+             <div class="mad12 lnavu"><a href="event.html"><i class="fa fa-cog"></i> Atur Event</a></div>
+              <div class="mad12 lnavu"><a href="login.html"><i class="fa fa-sign-out-alt"></i> Logout</a></div>
+            </div>
+
+
+
+        </div></div>
+    <div class="kananp">
+
+    <div class="container">
+        
+        <h1 class="mgt-50 tebel-700">Data Peserta<p>Data Peserta | Sistem Administrasi Perlombaan</p></h1>
+        <div class="row">
+            <div class="btn-right">
+                <button class="btn-ijo btn-right" ><i class="fa fa-file-excel"></i> Ekspor Excel</button>  
+                <button class="btn-biru btn-right" tog="modal" target="#pendaftar">+ Daftarkan Peserta</button>
+            </div>
+            <div class="mad mad12">
+                
+                <div class="card" style="padding:0">
+                  <br>
+<div class="container">
+                    <select class="slct-menu">
+                            <option>Terdaftar</option>
+                            <option>Ditolak</option>
+                            <option>Pending</option>
+                    </select>
+                    <select class="slct-menu" style="width:200px">
+                        <option>Desain Web</option>
+                        <option>Competitive Programming</option>
+                        <option>Desain Poster</option>
+                        <option>Fotografi</option>
+                        <option>Video Animasi</option>
+                </select>
+             
+                </div>
+                <br>
+                <br>
+                <table class="tabel-mantap datatb table-responsive" cellpadding="0" celspacing="0">
+                    <thead>
+                        <th>#</th>
+                     
+                        <th class="usrt">Nama Lengkap </th>
+                        <th class="usrt">Instansi </th>
+                    
+                        <th class="usrt">Bidang </th>
+                        <th class="usrt">Amount </th>
+                        <th class="usrt">Action </th>
+                    </thead>
+<tbody>
+   
+    <tr>
+      
+        <td>1</td>
+
+    <td>Abdan Hafidz</td>
+    <td>SMAN 58 Jakarta</td>
+    <td>Web Design</td>
+    <td>Rp 50.000</td>
+    <td>
+
+        <a href="edit.html"><button class="button"><i class="fa fa-edit"></i> </button></a>
+        
+        
+        
+        <button class="button"><i class="fa fa-times"></i></button></td>
+        
+    </tr>
+    <tr>
+        <td>2</td>
+    
+
+    <td>Abdan Hafidz</td>
+    <td>SMAN 58 Jakarta</td>
+    <td>Web Design</td>
+    <td>Rp 50.000</td>
+    <td>     <a href="edit.html"><button class="button"><i class="fa fa-edit"></i> </button></a>
+        
+        
+        
+        <button class="button"><i class="fa fa-times"></i></button></td>
+        </td>
+    </tr>
+    <tr>
+        <td>3</td>
+   
+
+    <td>Abdan Hafidz</td>
+    <td>SMAN 58 Jakarta</td>
+    <td>Web Design</td>
+    <td>Rp 50.000</td>
+    <td>     <a href="edit.html"><button class="button"><i class="fa fa-edit"></i> </button></a>
+        
+        
+        
+        <button class="button"><i class="fa fa-times"></i></button></td>
+        </td>
+    </tr>
+</tbody>
+
+                </table>
+             
+                </div>
+        
+            </div>
+          
+          
+        </div>
+    
+   
+    </div>
+
+</div>
+
+</div>
+</div>
+</div>
+<div class="modal" id="pendaftar">
+    <div class="container">
+    <div class="card card-unround card-modal mad9 mgt-30 " >    
+  
+        <div class="container"> 
+          
+        <h3 class="tebel-800">Tambah Data Peserta <a href="#" class="btn-tutup"><i class="fa fa-times label-tutup"></i></a></h3>
+      
+               
+ 
+   
+        <b class="label">Nama Lengkap</b>
+        <input type="text" class="inputy" >
+        <br><br>
+        <b class="label">Instansi</b>
+        <input type="text" class="inputy" >
+        <br><br>
+        <b class="label">Bidang</b>
+        <br>
+        <select class="inputy" style="height:50px">
+            <option>Desain Web</option>
+            <option>Competitive Programming</option>
+            <option>Desain Poster</option>
+            <option>Fotografi</option>
+            <option>Video Animasi</option>
+    </select>
+
+        <br><br>
+        <div class="card mad4 card-file">
+        <b class="label">File Pembayaran</b>   <br><br>
+     <h1 align="center"><i class="fa fa-upload tebel-800" style="font-size:34pt"></i></h1>
+        <input type="file" class="inputy" >
+        <br><br>
+
+  
+        </div>
+    
+
+        <br>
+        <button class="btn-kuning btn-tutup">Tutup</button> <button class="btn-biru">Simpan</button>
+    
+    </div>
+
+    </div>
+</div>
+
+
+
+<script src="https://kit.fontawesome.com/14717bb359.js" crossorigin="anonymous"></script>
+<script src="_public/assets/plugin/jquery.js" type="text/javascript"></script>
+<script src="_public/js/custom.js" type="text/javascript"></script>
+<script src="//cdn.datatables.net/1.11.2/js/jquery.dataTables.min.js"></script>
+<script>
+    $(document).ready( function () {
+    $('.datatb').DataTable({
+        responsive: true
+    });
+    $('.datatb').removeClass('dataTable');
+} );
+</script>
+
+</body>
+
+</html>
