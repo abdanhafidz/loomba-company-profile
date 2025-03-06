@@ -86,7 +86,7 @@ Based on the project structure, the likely technologies used are:
 
 - HTML5 for page structure
 - CSS3 for styling
-- JavaScript for interactivity
+- JavaScript via JQuery for interactivity
 - Front-end framework (possibly Bootstrap or Tailwind CSS)
 - Font Awesome or similar icon set for visual elements
 - Possible use of chart.js or similar library for statistics pages
