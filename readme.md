@@ -1,5 +1,5 @@
 # Loomba Company Profile Documentation
-
+## Created By : Abdan Hafidz (5054231 <code>021</code>)
 ## Introduction
 
 This documentation explains the development of the Loomba company profile website. The project can be accessed via GitHub repository: [https://github.com/abdanhafidz/loomba-company-profile](https://github.com/abdanhafidz/loomba-company-profile) and can be viewed online at [https://abdanhafidz.com/loomba](https://abdanhafidz.com/loomba).
