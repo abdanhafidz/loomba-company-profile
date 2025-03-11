@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/53436a87-eb0d-41bd-b94a-58310dc50c49)# Loomba Company Profile Documentation
+Loomba Company Profile Documentation
 ## Created By : Abdan Hafidz (5054231 <code>021</code>)
 ## Introduction
 
@@ -33,7 +33,7 @@ loomba-company-profile/
 ## Page Descriptions
 
 ### 1. index.html
-The main website page that serves as a landing page for first-time visitors. Contains introductory information about Loomba, key features, and call-to-action to register.
+The main website page that serves as a landing page for first-time visitors. Contains introductory information about Loomba, key features, and call-to-action to register. <br>
 ![Screen Recording 2025-03-11 095242](https://github.com/user-attachments/assets/30174d7e-0f7e-4054-8cbc-e0305ecb9847)
 
 ### 2. login.html
